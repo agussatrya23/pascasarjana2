@@ -1716,7 +1716,7 @@ div#mCSB_1_container{
 
 .sticky-header .main-menu .navigation > li{
   padding: 0px !important;
-  margin: 18px 11px !important;
+  margin: 20px 11px 18px !important;
   border-bottom: solid 2px transparent;
 }
 
@@ -1725,7 +1725,7 @@ div#mCSB_1_container{
 }
 
 .sticky-header .main-menu .navigation > li.active{
-  border: solid 2px #fff;
+  border-bottom: solid 2px #fff;
   border-radius: 3px;
 }
 
@@ -4013,17 +4013,17 @@ h3 a:hover{
 }
 
 .main-header.style-two .navigation .menu-right-content{
-  margin: 13px 0px 0px 15px;
+  margin: 17px 0px 0px 15px;
 }
 
 .sticky-header .main-menu .navigation .menu-right-content{
-  margin: 12px 0px 0px 15px;
+  margin: 17px 0px 0px 15px;
 }
 
 
 .main-header.style-two .menu-right-content .search-toggler{
   background-color: #fff;
-  border: solid 2px #202020;
+  border: none;
   border-radius: 50%;
   padding: 8px 13px;
   text-decoration: none;
@@ -4038,34 +4038,53 @@ h3 a:hover{
 
 .main-header.style-two .menu-right-content .search-toggler i{
   color: #202020;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   text-decoration: none;
-  transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
+  transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 }
 
 
 .main-header.style-two .menu-right-content .search-toggler:hover{
-  background-color: #04BE5B;
-  border: solid 2px #04BE5B;
+  background-color: none;
+  border: none;
 }
 
 .main-header.style-two .menu-right-content .search-toggler:hover i{
-  color: #fff;
+  color: #04BE5B;
+}
+
+.btn-box.search-box-nav {
+  position: relative;
+}
+
+.btn-box.search-box-nav::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  left: -10px;
+  top: 0px;
+  background: #000;
+}
+
+.fixed-header .btn-box.search-box-nav::before {
+  background: #fff;
 }
 
 .sticky-header .main-menu .menu-right-content .search-toggler{
   background-color: #04BE5B;
-  border: solid 2px #fff;
+  border: none;
 }
 
 .sticky-header .main-menu .menu-right-content .search-toggler:hover{
-  background-color: #fff;
-  border: solid 2px #04BE5B;
+  background-color: unset;
+  text-shadow: 0 0 10px #fff;
+  border: none;
 }
 
 .sticky-header .main-menu .menu-right-content .search-toggler i{
@@ -4073,7 +4092,7 @@ h3 a:hover{
 }
 
 .sticky-header .main-menu .menu-right-content .search-toggler:hover i{
-  color: #04BE5B;
+  color: #fff;
 }
 
 
@@ -4082,8 +4101,8 @@ h3 a:hover{
 /** banner-style-two **/
 
 .banner-section.style-two .banner-carousel .slide-item{
-  padding: 100px 0px 220px 0px;
-  max-height: 580px;
+  padding: 130px 0px 190px 0px;
+  height: calc(100vh - (80px + 49px));
 }
 
 .banner-section.style-two .banner-carousel .content-box h1{
@@ -4529,7 +4548,7 @@ h3 a:hover{
 
 .service-block-two .inner-box:hover .lower-content .link a i,
 .service-block-two .inner-box:hover .lower-content .link a{
-  color: #fff !important;
+  color: #04BE5B !important;
 }
 
 .service-style-two .owl-theme .owl-dots{
@@ -4653,7 +4672,7 @@ h3 a:hover{
 }
 
 .apply-style-two .single-item .inner-box:hover .icon-box{
-  color: #fff !important;
+  color: #04BE5B !important;
 }
 
 .apply-style-two .single-item .inner-box h3{

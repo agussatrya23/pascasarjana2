@@ -67,17 +67,6 @@
     margin: 0px 12px;
   }
 
-  .main-header .header-top .top-left,
-  .main-header .header-top .top-right{
-    float: none;
-    display: block;
-    text-align: center;
-  }
-
-  .main-header .header-top .top-left{
-    margin-bottom: 10px;
-  }
-
   #image_block_1 .image-box{
     margin-right: 0px;
   }
@@ -146,6 +135,10 @@
 
 
 @media only screen and (max-width: 991px){
+
+  .main-header .header-top{
+    display: none;
+  }
 
   .main-menu,
   .main-header.style-one .outer-container:before{
@@ -646,10 +639,6 @@
   /* .main-header.style-two .menu-right-content{
     display: none;
   } */
-
-  .main-header .header-top .top-left ul li:before{
-    display: none;
-  }
 
 }
 
