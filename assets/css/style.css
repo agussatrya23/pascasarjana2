@@ -4140,6 +4140,26 @@ h3 a:hover{
   margin-left: 27px;
 }
 
+.banner-section.style-two .banner-carousel .content-box.text-right .title-text:before {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.banner-section.style-two .banner-carousel .content-box.text-right .title-text .dotted-box .dotted {
+  left: unset;
+  right: 43px;
+}
+
+.banner-section.style-two .banner-carousel .content-box.text-right .title-text .dotted-box .dotted:nth-child(2) {
+  left: unset;
+  right: 49px;
+}
+
+.banner-section.style-two .banner-carousel .content-box.text-right .title-text .dotted-box .dotted:last-child {
+  left: unset;
+  right: 55px;
+}
+
 .banner-section.style-two .banner-carousel .slide-item:before {
   background: rgba(0,0,0,0.65);
 }
